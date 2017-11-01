@@ -1,128 +1,6 @@
-webpackJsonp([5],{
+webpackJsonp([6],{
 
-/***/ 510:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(964)
-
-var Component = __webpack_require__(197)(
-  /* script */
-  __webpack_require__(543),
-  /* template */
-  __webpack_require__(944),
-  /* scopeId */
-  "data-v-407a8a35",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 543:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__static_js_Star__ = __webpack_require__(976);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_js_Moon__ = __webpack_require__(975);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_js_Meteor__ = __webpack_require__(974);
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-				data: function data() {
-								return {
-												ruleForm: {
-																username: '',
-																password: ''
-												},
-												rules: {
-																username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],
-																password: [{ required: true, message: '请输入密码', trigger: 'blur' }]
-												}
-								};
-				},
-				methods: {
-								submitForm: function submitForm(formName) {
-												var self = this;
-												self.$refs[formName].validate(function (valid) {
-																if (valid) {
-																				localStorage.setItem('ms_username', self.ruleForm.username);
-																				self.$router.push('/readme');
-																} else {
-																				console.log('error submit!!');
-																				return false;
-																}
-												});
-								}
-				},
-				mounted: function mounted() {
-								var canvas = document.getElementById('canvas'),
-								    ctx = canvas.getContext('2d'),
-								    width = window.innerWidth,
-								    height = window.innerHeight,
-								    moon = new __WEBPACK_IMPORTED_MODULE_1__static_js_Moon__["a" /* default */](ctx, width, height),
-								    stars = new __WEBPACK_IMPORTED_MODULE_0__static_js_Star__["a" /* default */](ctx, width, height, 200),
-								    meteors = [],
-								    count = 0;
-
-								canvas.width = width;
-								canvas.height = height;
-
-								var meteorGenerator = function meteorGenerator() {
-												var x = Math.random() * width + 800;
-												meteors.push(new __WEBPACK_IMPORTED_MODULE_2__static_js_Meteor__["a" /* default */](ctx, x, height));
-
-												setTimeout(function () {
-																meteorGenerator();
-												}, Math.random() * 2000);
-								};
-
-								var frame = function frame() {
-												count++;
-												count % 10 == 0 && stars.blink();
-												moon.draw();
-												stars.draw();
-
-												meteors.forEach(function (meteor, index, arr) {
-																if (meteor.flow()) {
-																				meteor.draw();
-																} else {
-																				arr.splice(index, 1);
-																}
-												});
-												requestAnimationFrame(frame);
-								};
-								meteorGenerator();
-								frame();
-				}
-});
-
-/***/ }),
-
-/***/ 643:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(87)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "#menu[data-v-407a8a35]{height:100%;overflow:hidden;position:relative}.login-wrap[data-v-407a8a35]{width:100%}.ms-title[data-v-407a8a35]{position:absolute;top:50%;width:100%;margin-top:-230px;text-align:center;font-size:30px;color:#fff}.ms-login[data-v-407a8a35]{position:absolute;left:50%;top:50%;width:300px;height:160px;margin:-150px 0 0 -190px;padding:40px;border-radius:5px;background:#fff}.login-btn[data-v-407a8a35]{text-align:center}.login-btn button[data-v-407a8a35]{width:100%;height:36px}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 944:
+/***/ 1014:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -207,13 +85,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 964:
+/***/ 1035:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(643);
+var content = __webpack_require__(657);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -221,7 +99,7 @@ var update = __webpack_require__(196)("5003377c", content, true);
 
 /***/ }),
 
-/***/ 974:
+/***/ 1046:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -273,7 +151,7 @@ class Meteor {
 
 /***/ }),
 
-/***/ 975:
+/***/ 1047:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -304,7 +182,7 @@ class Moon {
 
 /***/ }),
 
-/***/ 976:
+/***/ 1048:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -363,6 +241,128 @@ class Stars {
 	}
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Stars;
+
+
+/***/ }),
+
+/***/ 510:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(1035)
+
+var Component = __webpack_require__(197)(
+  /* script */
+  __webpack_require__(556),
+  /* template */
+  __webpack_require__(1014),
+  /* scopeId */
+  "data-v-407a8a35",
+  /* cssModules */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 556:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__static_js_Star__ = __webpack_require__(1048);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_js_Moon__ = __webpack_require__(1047);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_js_Meteor__ = __webpack_require__(1046);
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+				data: function data() {
+								return {
+												ruleForm: {
+																username: '',
+																password: ''
+												},
+												rules: {
+																username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],
+																password: [{ required: true, message: '请输入密码', trigger: 'blur' }]
+												}
+								};
+				},
+				methods: {
+								submitForm: function submitForm(formName) {
+												var self = this;
+												self.$refs[formName].validate(function (valid) {
+																if (valid) {
+																				localStorage.setItem('ms_username', self.ruleForm.username);
+																				self.$router.push('/readme');
+																} else {
+																				console.log('error submit!!');
+																				return false;
+																}
+												});
+								}
+				},
+				mounted: function mounted() {
+								var canvas = document.getElementById('canvas'),
+								    ctx = canvas.getContext('2d'),
+								    width = window.innerWidth,
+								    height = window.innerHeight,
+								    moon = new __WEBPACK_IMPORTED_MODULE_1__static_js_Moon__["a" /* default */](ctx, width, height),
+								    stars = new __WEBPACK_IMPORTED_MODULE_0__static_js_Star__["a" /* default */](ctx, width, height, 200),
+								    meteors = [],
+								    count = 0;
+
+								canvas.width = width;
+								canvas.height = height;
+
+								var meteorGenerator = function meteorGenerator() {
+												var x = Math.random() * width + 800;
+												meteors.push(new __WEBPACK_IMPORTED_MODULE_2__static_js_Meteor__["a" /* default */](ctx, x, height));
+
+												setTimeout(function () {
+																meteorGenerator();
+												}, Math.random() * 2000);
+								};
+
+								var frame = function frame() {
+												count++;
+												count % 10 == 0 && stars.blink();
+												moon.draw();
+												stars.draw();
+
+												meteors.forEach(function (meteor, index, arr) {
+																if (meteor.flow()) {
+																				meteor.draw();
+																} else {
+																				arr.splice(index, 1);
+																}
+												});
+												requestAnimationFrame(frame);
+								};
+								meteorGenerator();
+								frame();
+				}
+});
+
+/***/ }),
+
+/***/ 657:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(87)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "#menu[data-v-407a8a35]{height:100%;overflow:hidden;position:relative}.login-wrap[data-v-407a8a35]{width:100%}.ms-title[data-v-407a8a35]{position:absolute;top:50%;width:100%;margin-top:-230px;text-align:center;font-size:30px;color:#fff}.ms-login[data-v-407a8a35]{position:absolute;left:50%;top:50%;width:300px;height:160px;margin:-150px 0 0 -190px;padding:40px;border-radius:5px;background:#fff;opacity:.88}.login-btn[data-v-407a8a35]{text-align:center}.login-btn button[data-v-407a8a35]{width:100%;height:36px}", ""]);
+
+// exports
 
 
 /***/ })

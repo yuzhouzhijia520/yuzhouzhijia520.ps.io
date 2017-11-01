@@ -14,7 +14,9 @@ body,
 
 body {
     font-family: "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
-    background-image: url(../img/black.jpg);
+    /*background-image: url(../img/black.jpg);*/
+    background-color: rgba(0, 0, 0, 0.92);
+    color: rgba(255, 255, 255, 0.64);
 }
 
 a {
@@ -22,7 +24,6 @@ a {
 }
 
 .content {
-    background: none repeat scroll 0 0 #fff;
     position: absolute;
     left: 250px;
     right: 0;
