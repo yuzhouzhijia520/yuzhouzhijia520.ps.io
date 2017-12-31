@@ -1,17 +1,17 @@
-webpackJsonp([5],{
+webpackJsonp([4],{
 
 /***/ 510:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(683)
+__webpack_require__(621)
 
 var Component = __webpack_require__(196)(
   /* script */
-  __webpack_require__(546),
+  __webpack_require__(536),
   /* template */
-  __webpack_require__(663),
+  __webpack_require__(600),
   /* scopeId */
   null,
   /* cssModules */
@@ -23,14 +23,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 546:
+/***/ 536:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__static_js_Star__ = __webpack_require__(690);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_js_Moon__ = __webpack_require__(689);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_js_Meteor__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__static_js_Star__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_js_Moon__ = __webpack_require__(626);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_js_Meteor__ = __webpack_require__(625);
 
 
 
@@ -107,7 +107,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 570:
+/***/ 562:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(87)(undefined);
@@ -122,7 +122,7 @@ exports.push([module.i, "#menu{height:100%;overflow:hidden;position:relative}.lo
 
 /***/ }),
 
-/***/ 663:
+/***/ 600:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -196,24 +196,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.submitForm('ruleForm')
       }
     }
-  }, [_vm._v("登录")])], 1), _vm._v(" "), _c('p', {
+  }, [_vm._v("LOGIN")])], 1), _vm._v(" "), _c('p', {
     staticStyle: {
       "font-size": "12px",
       "line-height": "30px",
       "color": "#999"
     }
-  }, [_vm._v("提示: 用户名和密码随便填！")])], 1)], 1)])
+  }, [_vm._v("温馨提示: 随意输入即可，未做校验！")])], 1)], 1)])
 },staticRenderFns: []}
 
 /***/ }),
 
-/***/ 683:
+/***/ 621:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(570);
+var content = __webpack_require__(562);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -221,7 +221,7 @@ var update = __webpack_require__(197)("046db4d3", content, true);
 
 /***/ }),
 
-/***/ 688:
+/***/ 625:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -273,7 +273,7 @@ class Meteor {
 
 /***/ }),
 
-/***/ 689:
+/***/ 626:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -304,7 +304,7 @@ class Moon {
 
 /***/ }),
 
-/***/ 690:
+/***/ 627:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
