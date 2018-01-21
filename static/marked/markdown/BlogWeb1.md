@@ -409,7 +409,6 @@ ieBetter.js-让IE6-IE8拥有IE9+,Chrome等浏览器特性	|http://www.zhangxinxu
 经典排序	|https://github.com/luofei2011/jsAgm/blob/master/js/sort.js
 常见排序算法-js版本	|https://github.com/hechangmin/jssort
 JavaScript 算法与数据结构 精华集	|https://github.com/lightningtgc/JavaScript-Algorithms
-面试常考算法题精讲	|http://www.nowcoder.com/live/courses
 ## 移动端
 移动端	|地址
 ------------ | -------------
