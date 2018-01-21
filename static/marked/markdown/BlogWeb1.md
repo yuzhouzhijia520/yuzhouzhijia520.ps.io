@@ -61,7 +61,7 @@ New Old Stock	|http://nos.twnsnd.co 复古风图库
 codepen	|http://codepen.io/
 摄图网	|http://699pic.com/
 常用的JavaScript代码片段	|http://microjs.com
-## 团队Blog|周报类
+## 团队Blog 周报类
 周报类	 | 地址
 ------------ | -------------
 奇舞周刊	|http://old.75team.com/weekly/
