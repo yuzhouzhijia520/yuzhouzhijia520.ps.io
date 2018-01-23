@@ -147,6 +147,9 @@ cors、jsonp、window.name、location.hash、csst、代理、document.domain、w
   	服务器交给后台处理完成后返回数据，浏览器接收文件（HTML、JS、CSS、图象等）；
   	浏览器对加载到的资源（HTML、JS、CSS等）进行语法解析，建立相应的内部数据结构（如HTML的DOM）；
   	载入解析到的资源文件，渲染页面，完成。
-
+## 13、HTML、XML、XHTML 有什么区别?
+* HTML，超文本标记语言，是语法较为松散的、不严格的Web语言；
+* XML，可扩展标记语言，主要用于存储数据和结构，可扩展；
+* XHTML，可扩展超文本标记语言，基于XML，作用与HTML类似，但语法更严格。
 
 
