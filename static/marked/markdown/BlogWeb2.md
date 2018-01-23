@@ -122,3 +122,5 @@
 * 异步的概念
 异步，是一种并行处理的方式，不必等待一个程序执行完，可以执行其它的任务。在程序中异步处理的结果通常使用回调函数来处理结果。在JavaScript中实现异步的方式主要有Ajax和H5新增的Web Worker。
 同步强调的是顺序性.谁先谁后.异步则不存在这种顺序性.
+## 10、如何解决跨域问题?
+cors、jsonp、window.name、location.hash、csst、代理、document.domain、window.postMessage、flash等（详情待整理）
