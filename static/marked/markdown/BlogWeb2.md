@@ -1,4 +1,4 @@
-##  1、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？                                                                                 ```
+##  1、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？                                                                             ```
 首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。
 
   （1）行内元素有：a span img input select strong textarea（强调的语气）
