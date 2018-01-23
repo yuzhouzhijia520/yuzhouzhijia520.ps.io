@@ -124,3 +124,10 @@
 同步强调的是顺序性.谁先谁后.异步则不存在这种顺序性.
 ## 10、如何解决跨域问题?
 cors、jsonp、window.name、location.hash、csst、代理、document.domain、window.postMessage、flash等（详情待整理）
+## 11、你有用过哪些前端性能优化的方法？
+ 见<a href="https://github.com/yuzhouzhijia520/ps-note/blob/master/8%E3%80%81Web%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md">Web前端性能优化</a>
+
+
+
+
+
