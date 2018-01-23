@@ -38,3 +38,16 @@
 * 4、Presto内核：代表作品是Opera，Presto是由Opera Software开发的浏览器排版引擎，它是世界公认最快的渲染速度的引擎。在13年之后，Opera宣布加入谷歌阵营，弃用了Presto 
 * 5、Blink内核：由Google和Opera Software开发的浏览器排版引擎，2013年4月发布。现在Chrome内核是Blink。
 >>
+
+## 4、display有哪些值？说明他们的作用。
+>>
+    block       	块类型。默认宽度为父元素宽度，可设置宽高，换行显示。
+    none        	缺省值。象行内元素类型一样显示。
+    inline      	行内元素类型。默认宽度为内容宽度，不可设置宽高，同行显示。
+    inline-block  默认宽度为内容宽度，可以设置宽高，同行显示。
+    list-item   	象块类型元素一样显示，并添加样式列表标记。
+    table       	此元素会作为块级表格来显示。
+    inherit     	规定应该从父元素继承 display 属性的值。
+>>
+
+
