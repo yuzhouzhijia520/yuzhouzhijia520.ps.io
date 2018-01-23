@@ -170,3 +170,10 @@ var module1 = (function(){
      　　　　};
      　　})();
 ```
+## 15、考察立即执行函数
+```
+(function(){
+     　　　　console.log(this);
+     　　})();
+ result:undefined
+```
