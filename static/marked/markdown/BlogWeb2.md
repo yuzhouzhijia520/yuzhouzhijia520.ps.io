@@ -122,12 +122,31 @@
 * 异步的概念
 异步，是一种并行处理的方式，不必等待一个程序执行完，可以执行其它的任务。在程序中异步处理的结果通常使用回调函数来处理结果。在JavaScript中实现异步的方式主要有Ajax和H5新增的Web Worker。
 同步强调的是顺序性.谁先谁后.异步则不存在这种顺序性.
+
 ## 10、如何解决跨域问题?
 cors、jsonp、window.name、location.hash、csst、代理、document.domain、window.postMessage、flash等（详情待整理）
+
 ## 11、你有用过哪些前端性能优化的方法？
  见<a href="https://github.com/yuzhouzhijia520/ps-note/blob/master/8%E3%80%81Web%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md">Web前端性能优化</a>
 
+## 12、一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？
+    详细版：
+  	1、浏览器会开启一个线程来处理这个请求，对 URL 分析判断如果是 http 协议就按照 Web 方式来处理;
+  	2、调用浏览器内核中的对应方法，比如 WebView 中的 loadUrl 方法;
+      3、通过DNS解析获取网址的IP地址，设置 UA 等信息发出第二个GET请求;
+  	4、进行HTTP协议会话，客户端发送报头(请求报头);
+      5、进入到web服务器上的 Web Server，如 Apache、Tomcat、Node.JS 等服务器;
+      6、进入部署好的后端应用，如 PHP、Java、JavaScript、Python 等，找到对应的请求处理;
+  	7、处理结束回馈报头，此处如果浏览器访问过，缓存上有对应资源，会与服务器最后修改时间对比，一致则返回304;
+      8、浏览器开始下载html文档(响应报头，状态码200)，同时使用缓存;
+      9、文档树建立，根据标记请求所需指定MIME类型的文件（比如css、js）,同时设置了cookie;
+      10、页面开始渲染DOM，JS根据DOM API操作DOM,执行事件绑定等，页面显示完成。
 
+    简洁版：
+  	浏览器根据请求的URL交给DNS域名解析，找到真实IP，向服务器发起请求；
+  	服务器交给后台处理完成后返回数据，浏览器接收文件（HTML、JS、CSS、图象等）；
+  	浏览器对加载到的资源（HTML、JS、CSS等）进行语法解析，建立相应的内部数据结构（如HTML的DOM）；
+  	载入解析到的资源文件，渲染页面，完成。
 
 
 
