@@ -5,8 +5,6 @@
 * （1）行内元素有：a span img input select strong textarea（强调的语气）
 * （2）块级元素有：div form table ul ol li dl dt dd h1 h2 h3 h4…p
 * （3）常见的空元素：<br> <hr> <img> <input> <link> <meta>
-*  	鲜为人知的是：
-*  	<area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
 
 *   不同浏览器（版本）      
 >>
