@@ -53,6 +53,7 @@
   	默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right z-index 声明）。
     inherit
   	规定从父元素继承 position 属性的值。
+    https://www.cnblogs.com/coco1s/p/6733022.html
 
 ## 6、css定义的权重
 以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：
@@ -177,4 +178,65 @@ var module1 = (function(){
      　　　　console.log(this);
      　　})();
  result:undefined
+```
+
+## 16、编写一个js函数，该函数有一个n（数字类型），其返回值是一个数组，该数组内是n个随机且不重复的整数，且整数取值范围是[2,32]
+```
+function fn(n){
+	function contain(arr,item){
+		var flag=false;
+		if(arr.indexOf(item)!=-1){
+			flag=true;
+		}
+		return flag;
+	}
+	function arrCreate(arr,n){
+		
+		while(arr.length<n){
+			var item=Math.round(Math.random()*30+2);
+			if(!contain(arr,item)){
+				arr.push(item);
+			}
+		}
+	}
+	function isNumber(n){
+		return  Object.prototype.toString.call(n)==="[object Number]";
+	}
+	var arr=[];
+	if(!isNumber(n)){
+		return "请输入数字";
+	}
+	if(n>31||n<0){
+		return "请输入0到31之间的数";
+	}
+	arrCreate(arr,n);
+	return arr;
+}
+fn(5);
+```
+## es7改进后
+```
+function fn(n){
+	function arrCreate(arr,n){
+		while(arr.length<n){
+			var item=Math.round(Math.random()*30+2);
+			if(!arr.includes(item)){
+				arr.push(item);
+			}
+		}
+	}
+	function isNumber(n){
+		return  Object.prototype.toString.call(n)==="[object Number]";
+	}
+	var arr=[];
+	if(!isNumber(n)){
+		return "请输入数字";
+	}
+	if(n>31||n<0){
+		return "请输入0到31之间的数";
+	}
+	arrCreate(arr,n);
+	return arr;
+}
+fn(5);
 ```

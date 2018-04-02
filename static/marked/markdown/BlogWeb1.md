@@ -68,7 +68,7 @@ codepen	|http://codepen.io/
 码农周刊	|http://weekly.manong.io
 WEB前端开发	|http://www.css88.com
 A JS tip per day!	|http://www.jstips.co
-腾讯全端 AlloyTeam	|http://www.alloyteam.com/webdevelop/
+腾讯前端 AlloyTeam	|http://www.alloyteam.com/webdevelop/
 平安科技移动开发二队技术周报	|https://github.com/PaicHyperionDev/MobileDevWeekly
 ## 开发中心
 开发中心|	地址
