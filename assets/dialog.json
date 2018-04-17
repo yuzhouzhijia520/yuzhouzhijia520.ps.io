@@ -2,13 +2,13 @@
     "fromXianzhe": [{
         "id": "0000",
         "details": [
-            ["很高兴遇见你"]
+            ["很高兴遇见你!欢迎来到小熊科技"]
         ],
         "responses": [{
             "content": "我也是！",
             "nextXianzhe": ["0003"]
         }, {
-            "content": "我很怀疑这点……",
+            "content": "我很怀疑这点……这里是小熊科技公司",
             "nextXianzhe": ["0001"]
         }, {
             "content": "真的吗？",
